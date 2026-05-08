@@ -11,7 +11,7 @@ def is_valid_parentheses(string: str) -> bool:
         else:
             if pilha.is_empty():
                 return False
-            
+
             topo = pilha.pop()
 
             if caractere == ')' and topo != '(':
@@ -20,5 +20,5 @@ def is_valid_parentheses(string: str) -> bool:
                 return False
             if caractere == '}' and topo != '{':
                 return False
-            
+
     return pilha.is_empty()
